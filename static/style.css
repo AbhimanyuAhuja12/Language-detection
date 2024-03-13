@@ -1,0 +1,85 @@
+/* Style for the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the input form */
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label{
+font-size:25px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Style for the result alert box */
+.alert {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-left: 6px solid #4CAF50;
+    border-radius: 8px;
+}
+
+/* Style for the alert heading */
+.alert h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* Style for the back to input button */
+.btn-back {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#heading{
+text-align:center;
+font-size:44px;
+margin:10px 10px;
+color:blue;
+}
+
+.form-control{
+height:350px;
+width:750px;
+
+}
+
+body{
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+}
+
+#answer{
+font-size:45px;
+font-weight:800;
+text-align: center;
+}

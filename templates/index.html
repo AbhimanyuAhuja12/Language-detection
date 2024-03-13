@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input Form</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1 id="heading">Detect Any Language</h1>
+    <div class="container mt-5">
+<!--        <h1>Insert Any Text</h1>-->
+<!--        {% if processed_text %}-->
+        <div class="alert alert-success" role="alert">
+            <h2>Processed Text</h2>
+            <p>{{ processed_text }}</p>
+            <a href="/" class="btn btn-primary">Back to Input</a>
+        </div>
+<!--        {% else %}-->
+
+        <form action="/Identify" method="post">
+            <div class="form-group">
+                <label  for="inputText">Insert Any Text:</label>
+                <textarea  class="form-control" id="inputText" name="input_text" required>
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Identify</button>
+        </form>
+         {% if result %}
+            <p id="answer">{{result}}</p>
+        {% endif %}
+<!--        {% endif %}-->
+    </div>
+</body>
+</html>
